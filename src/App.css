@@ -18,7 +18,16 @@
   width: auto;
   margin-bottom: 50px;
 }
-
+.counter {
+  border-radius: 15px;
+  background-color: #5c48d3;
+  padding: 150px;
+  font-size: 96px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   max-width: 1200px;
   height: 1356px;
@@ -26,14 +35,21 @@
   display: flex;
   flex-direction: column;
 
-  justify-content: center;
-  align-items: center;
+  left: 30vw;
+  top: 55vw;
 }
 
 .btnHaut {
+  margin-top: 200px;
   display: flex;
+  justify-content: center;
   margin-bottom: 40px;
   gap: 20px;
+}
+
+.btnBas {
+  display: flex;
+  justify-content: center;
 }
 .moins,
 .plus {
@@ -45,13 +61,18 @@
   background-color: white;
 }
 
-span {
-  border-radius: 15px;
-  background-color: #5c48d3;
-  padding: 150px;
-  font-size: 96px;
-  color: white;
+footer {
+  display: flex;
+  justify-content: center;
 }
+p {
+  font-size: 18x;
+}
+
+span {
+  font-weight: bold;
+}
+
 .reset {
   border: none;
   height: 60px;

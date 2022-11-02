@@ -26,12 +26,12 @@ const App = () => {
             }}
           >
             <img
-              style={counter === 0 && { display: "none" }}
+              style={counter === 0 ? { display: "none" } : { display: "flex" }}
               src={Moins}
               alt="button moins"
             />
           </button>
-          <span>{counter}</span>
+          <span className="counter">{counter}</span>
           <button
             className="plus"
             onClick={() => {
@@ -39,7 +39,7 @@ const App = () => {
             }}
           >
             <img
-              style={counter > 10 && { display: "none" }}
+              style={counter > 10 ? { display: "none" } : { display: "flex" }}
               src={Plus}
               alt="button plus"
             />
@@ -51,7 +51,12 @@ const App = () => {
           </button>
         </div>
       </div>
-      <footer></footer>
+      <footer>
+        <p>
+          Made with <span>React </span>at<span> Le Reacteur</span> by
+          <span> Mariia MERCIER</span>
+        </p>
+      </footer>
     </>
   );
 };
