@@ -26,7 +26,11 @@ const App = () => {
             }}
           >
             <img
-              style={counter === 0 ? { display: "none" } : { display: "flex" }}
+              style={
+                counter === 0
+                  ? { visibility: "hidden" }
+                  : { visibility: "visible" }
+              }
               src={Moins}
               alt="button moins"
             />
@@ -39,7 +43,11 @@ const App = () => {
             }}
           >
             <img
-              style={counter > 10 ? { display: "none" } : { display: "flex" }}
+              style={
+                counter === 10
+                  ? { visibility: "hidden" }
+                  : { visibility: "visible" }
+              }
               src={Plus}
               alt="button plus"
             />
